@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>com.omari.morninghud.refresh</string>
+	</array>
+	<!-- Google Sign-In: replace PASTE_YOUR_CLIENT_ID_HERE with the iOS client ID
+	     from Google Cloud Console → APIs & Services → Credentials.
+	     Format: NNNNNNNNNN-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com -->
+	<key>GIDClientID</key>
+	<string>PASTE_YOUR_CLIENT_ID_HERE</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<!-- Google Sign-In OAuth redirect scheme: reverse of your iOS client ID.
+			     Example: com.googleusercontent.apps.NNNNNNNNNN-xxxx -->
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>PASTE_YOUR_REVERSED_CLIENT_ID_HERE</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlegmail</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ChakraPetch-SemiBold.ttf</string>
+		<string>ChakraPetch-Bold.ttf</string>
+		<string>JetBrainsMono-Regular.ttf</string>
+		<string>JetBrainsMono-Medium.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>VEGA listens to your voice so you can ask questions hands-free.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>VEGA transcribes your speech on-device to understand your questions.</string>
+</dict>
+</plist>
